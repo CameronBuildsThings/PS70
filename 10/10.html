@@ -23,33 +23,61 @@
 <xmp style="display:none;">
 <br> 
 
-#### Weeks 3 and 4 kitetic sculpture + coding 
+#### Final Project
 
 
 
- <img src="31.jpg" alt="drawings of the initial concept," style="width:500px;height:600px;"> 
- <img src="32.jpg" alt=" another sketch screenshot of CAD" style="width:500px;height:600px;">
-<img src="33.gif" alt="drawings of the initial concept," style="width:500px;height:600px;"> 
- <img src="34.gif" alt=" another sketch screenshot of CAD" style="width:500px;height:600px;">
- I'd initially conceptualised this as a lamp/sculpture that would use two kinds of motion, there would be a hole in the base through whitch a sculpture of a bird would be flapping its wings and also the top part would be an animation wheel. In the end I ended up only really finishing the animation wheel, but I worked on them concurently so I've included documentation of that prosses as well.
+For my minimum viable product I made the gear and piston system I plan to use to convert the circular motion of the motor into linear motion. I used the gearmaker extension in fusion 360 and lazercut the parts out of cardboard .  
+ <img src="3.gif" alt="pison gear mechanism V1," style="width:500px;height:600px;"> 
+ <img src="5.gif" alt="pison gear mechanism V2," style="width:500px;height:600px;"> 
+ <img src="4.gif" alt="pison gear mechanism V3," style="width:500px;height:600px;"> 
 
- I used the pressfit box generator we talked about in class but made some modifications. 
-  <img src="35.gif" alt="drawings of the initial concept," style="width:500px;height:600px;"> 
-  Because the box was hexoganal instead of square the holes for the moving part needed to be hand drilled at an angle which I hadn't anticipated. 
- <img src="36.jpg" alt=" another sketch screenshot of CAD" style="width:500px;height:600px;">
-<img src="37.jpg" alt="drawings of the initial concept," style="width:500px;height:600px;"> 
- <img src="38.gif" alt=" another sketch screenshot of CAD" style="width:500px;height:600px;">
- <img src="39.jpg" alt="drawings of the initial concept," style="width:500px;height:600px;"> 
+I re-built the circuts Chris and I built during Week 9 Radio, WiFi, Bluetooth and then rebuilt them again in order to sodder them and make them a little more compact and sturdy. 
+ <img src="5a.jpg" alt="soddered button remote control" style="width:500px;height:600px;"> 
+ <img src="5b.jpg" alt="soddered reveiver " style="width:500px;height:600px;"> 
+ <img src="5c.jpg" alt="soddered receiver back," style="width:500px;height:600px;"> 
+ <img src="6.gif" alt="soddered sender turning motor," style="width:500px;height:600px;"> 
+
+I went to the site this system would be installed in and mesured the doornob. 
+<img src="6.jpg" alt="soddered reveiver " style="width:500px;height:600px;"> 
+ <img src="7.jpg" alt="soddered receiver back," style="width:500px;height:600px;"> 
+ <img src="8.jpg" alt="soddered sender turning motor," style="width:500px;height:600px;"> 
+<img src="9.jpg" alt="soddered sender turning motor," style="width:500px;height:600px;">
+
+I scalled up the MVP and on PK's sudgestions increased the distance between the gear and the piston in order to allow for a bigger gear/greater verticle motion. I gave it a backbored and while accounting for the distance to the backboard dsigned a fork to push down the doorknob... which broke imediatly. 
+
+<img src="10.jpg" alt="prototype on the door" style="width:500px;height:600px;">
+<img src="11.jpg" alt="broken fork" style="width:500px;height:600px;">
+
+I re-cut it out of acrylic and sunk the bolts so that they wouldn't catch on the edge of the back plate. 
+
+<img src="13.jpg" alt="prototype on the door" style="width:500px;height:600px;">
+
+Of course by then I'd killed my second motor driver... the rotation of the gears tightened 
+the bolts holding them in place. Clarissa pointed out this possibility and I modifiedd the setup to 
+prevent this happening again and got the machine spinning again. I used an arduino uno because I 
+had worn out my patience for the Xiao's by this point. 
+
+<img src="14.mp4" alt="video of automatic door opener in infinite white space" style="width:500px;height:600px;">
+ <video width="500" height="600" controls>
+  <source src="14.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+Your browser does not support the video tag.
+
+I plan to do a V2 and V3 during J term next semester. 
+
+For this project, I want to get the remote working again (It was before, I think I crossed a wire
+when soddering the receiver board).
+I also want to make it quieter, it makes a really horrible sound. I think I can fix this by insulating 
+the motor or perhaps switching to a stepper motor. I also think lining up the gears better might help.
 
 
- the motor didn't catch well in the cardboard but that little peice of metal pinned it together and prevented that problem. 
+For V3 I want to try a different design in order to make it more easily replicatable/shippable
+ (spool on a motor and wire permanently affixed to the doorknob, motor spinning pulls the wire 
+ onto the spool, tension pulls down doorknob). 
 
 
- <img src="310.gif" alt=" another sketch screenshot of CAD" style="width:500px;height:600px;">
-  <img src="311.gif" alt=" device rotating," style="width:500px;height:600px;"> 
- <img src="312.jpg" alt=" arduino board " style="width:500px;height:600px;">
-
-I tried a couple different ways to set up the arduino code for the servo, setting the position to spin to 30, 90 180 (and attempted 360 which was not possible) before I realised the servo I chose wasen't able to spin a full 360 degrees. I also tried to use the knob to controll the speed before realising the use-case that made more sense there was position because the servo could only rotate 180degrees. 
+</video> 
 
 </xmp>
 </body>
